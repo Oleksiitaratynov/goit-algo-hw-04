@@ -11,10 +11,9 @@ def add_contact(args, contacts):
 
 def change_contact(args, contacts):
     name, phone = args
-    if ValueError():
-      print ("add args")
-    elif name in contacts:  
-      contacts[name] = phone
+    if name in contacts:
+        raise ValueError("Contact")
+    contacts[name] = phone
     return "Contact updated successfully"
 
 def show_contact(args, contacts):
