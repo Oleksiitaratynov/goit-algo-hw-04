@@ -11,9 +11,10 @@ def add_contact(args, contacts):
 
 def change_contact(args, contacts):
     name, phone = args
-    if name in contacts:
-        raise ValueError("Contact")
-    contacts[name] = phone
+    if ValueError():
+      print ("add args")
+    elif name in contacts:  
+      contacts[name] = phone
     return "Contact updated successfully"
 
 def show_contact(args, contacts):
@@ -46,20 +47,21 @@ def main():
         elif command == "hello":
             print("How can I help you?")
 
-        elif command == "add":
+        elif command == "add" and len(args) == 2:
             print(add_contact(args, contacts))
 
-        elif command == "change":
+        elif command == "change" and len(args) == 2:
             print(change_contact(args, contacts))
 
-        elif command == "show":
+        elif command == "show" and len(args) == 1:
             print(show_contact(args, contacts))
 
-        elif command == "phone":
+        elif command == "phone" and len(args) == 1:
             print(show_phone(args, contacts))
 
         elif command == "all":
             print(show_all(contacts))
+
 
         else:
             print("Invalid command.")
