@@ -56,7 +56,7 @@ def main():
             print(show_contact(args, contacts))
 
         elif command == "phone":
-            print(show_phone(contacts, name))
+            print(show_phone(args, contacts))
 
         elif command == "all":
             print(show_all(contacts))
